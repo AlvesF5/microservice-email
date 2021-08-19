@@ -61,6 +61,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.jetbrains.kotlin</groupId>
+			<artifactId>kotlin-maven-noarg</artifactId>
+			<version>${kotlin.version}</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -83,6 +91,13 @@
 					<compilerPlugins>
 						<plugin>spring</plugin>
 						<plugin>jpa</plugin>
+						<plugin>no-arg</plugin>
+
+						<pluginOptions>
+							<option>no-arg:annotation=com.my.Annotation</option>
+							<!-- Call instance initializers in the synthetic constructor -->
+							<!-- <option>no-arg:invokeInitializers=true</option> -->
+						</pluginOptions>
 					</compilerPlugins>
 				</configuration>
 				<dependencies>

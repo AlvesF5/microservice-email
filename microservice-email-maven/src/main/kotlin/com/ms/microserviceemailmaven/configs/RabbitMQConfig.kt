@@ -18,7 +18,8 @@ class RabbitMQConfig {
     }
 
     @Bean
-    fun messageConverter() : Jackson2JsonMessageConverter{
+    open fun messageConverter() : Jackson2JsonMessageConverter{
         return Jackson2JsonMessageConverter()
     }
+
 }

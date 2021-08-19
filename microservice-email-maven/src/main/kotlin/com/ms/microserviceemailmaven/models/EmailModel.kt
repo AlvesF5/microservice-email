@@ -14,11 +14,12 @@ class EmailModel(val ownerRef : String = "",
                  @Column(columnDefinition = "")
                  val text : String = "") {
 
-     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-     val emailId : UUID? = null
+     @Id
+     val emailId : UUID = UUID.randomUUID()
 
      var sendDateEmail : LocalDateTime? = null
      var statusEmail : StatusEmail? = null
+
 
 
 
