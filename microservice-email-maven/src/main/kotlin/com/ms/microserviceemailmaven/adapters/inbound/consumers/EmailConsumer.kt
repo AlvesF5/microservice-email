@@ -1,7 +1,7 @@
-package com.ms.microserviceemailmaven.consumes
+package com.ms.microserviceemailmaven.adapters.inbound.consumers
 
-import com.ms.microserviceemailmaven.dtos.EmailDTO
-import com.ms.microserviceemailmaven.services.EmailService
+import com.ms.microserviceemailmaven.adapters.inbound.dtos.EmailDTO
+import com.ms.microserviceemailmaven.application.ports.EmailService
 import org.springframework.amqp.rabbit.annotation.RabbitListener
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.messaging.handler.annotation.Payload

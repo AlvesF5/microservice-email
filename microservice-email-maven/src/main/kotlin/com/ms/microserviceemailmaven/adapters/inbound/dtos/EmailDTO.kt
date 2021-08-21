@@ -1,6 +1,6 @@
-package com.ms.microserviceemailmaven.dtos
+package com.ms.microserviceemailmaven.adapters.inbound.dtos
 
-import com.ms.microserviceemailmaven.models.EmailModel
+import com.ms.microserviceemailmaven.application.entities.models.EmailModel
 import javax.validation.constraints.Email
 import javax.validation.constraints.NotBlank
 

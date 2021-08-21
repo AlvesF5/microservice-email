@@ -1,4 +1,4 @@
-package com.ms.microserviceemailmaven.configs
+package com.ms.microserviceemailmaven.adapters.configuration
 
 import org.springframework.amqp.core.Queue
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter

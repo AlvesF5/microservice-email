@@ -1,6 +1,6 @@
-package com.ms.microserviceemailmaven.models
+package com.ms.microserviceemailmaven.application.entities.models
 
-import com.ms.microserviceemailmaven.enums.StatusEmail
+import com.ms.microserviceemailmaven.application.entities.enums.StatusEmail
 import java.time.LocalDateTime
 import java.util.*
 import javax.persistence.*
